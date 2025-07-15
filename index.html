@@ -99,8 +99,8 @@
 </head>
 <body>
     <div class="header">
-        <h1>Coffee Shop & Rental Property Analyzer</h1>
-        <p>Huntsville & Madison Area, Alabama</p>
+        <h1>Coffee Shop Analyzer</h1>
+        <p>Huntsville & Jacksonville</p>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -220,7 +220,7 @@
         var editingRentalIndex = null;
 
         // Load coffee shops data
-        fetch('Competetion_Coffeeshops.csv')
+        fetch('Combined.csv')
             .then(response => response.text())
             .then(csvText => {
                 let parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
